@@ -1,0 +1,13 @@
+import { cronJobs } from "convex/server";
+import { internal } from "./_generated/api";
+
+const crons = cronJobs();
+
+crons.interval(
+    "clean expired published agent conversations",
+    { minutes: 5 },
+    internal.agent.deleteExpiredPublishedConversations,
+    {}
+);
+
+export default crons;
