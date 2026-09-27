@@ -28,7 +28,7 @@ export default async function Home() {
   }
 
   return (
-    <main className="relative min-h-svh overflow-hidden bg-[#080b13] text-white selection:bg-violet-400/30">
+    <main className="relative min-h-svh overflow-hidden bg-[#080b13] text-white selection:bg-violet-400/30 lg:h-svh lg:min-h-0">
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 overflow-hidden"
@@ -39,7 +39,7 @@ export default async function Home() {
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,11,19,0.15)_0%,#080b13_100%)]" />
       </div>
 
-      <header className="relative z-10 mx-auto flex w-full max-w-[1440px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12 lg:py-7">
+      <header className="relative z-10 mx-auto flex w-full max-w-[1440px] items-center justify-between px-5 py-5 sm:px-8 lg:h-[76px] lg:px-12 lg:py-0">
         <Link href="/" aria-label="Alpha Agents home" className="group flex items-center gap-3">
           <span className="relative grid size-11 place-items-center overflow-hidden rounded-2xl border border-white/15 bg-white/[0.07] shadow-[0_8px_30px_rgba(124,58,237,0.22)]">
             <span className="absolute inset-1 rounded-[12px] bg-gradient-to-br from-violet-300 via-blue-300 to-cyan-200 opacity-95 transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110" />
@@ -61,9 +61,9 @@ export default async function Home() {
         </div>
       </header>
 
-      <section className="relative z-10 mx-auto grid min-h-[calc(100svh-104px)] w-full max-w-[1440px] items-center gap-14 px-5 pb-14 pt-10 sm:px-8 lg:min-h-[calc(100svh-112px)] lg:grid-cols-[0.94fr_1.06fr] lg:gap-10 lg:px-12 lg:pb-20 lg:pt-4">
-        <div className="mx-auto w-full max-w-[640px] lg:mx-0 lg:pb-8">
-          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.045] px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-100/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:text-xs">
+      <section className="relative z-10 mx-auto grid min-h-[calc(100svh-104px)] w-full max-w-[1440px] items-center gap-14 px-5 pb-14 pt-10 sm:px-8 lg:h-[calc(100svh-76px)] lg:min-h-0 lg:grid-cols-[0.94fr_1.06fr] lg:gap-10 lg:px-12 lg:py-6">
+        <div className="mx-auto w-full max-w-[640px] lg:mx-0">
+          <div className="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.045] px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] text-violet-100/80 shadow-[inset_0_1px_0_rgba(255,255,255,0.05)] sm:text-xs lg:mb-5">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-emerald-300 opacity-60" />
               <span className="relative inline-flex size-2 rounded-full bg-emerald-300" />
@@ -71,22 +71,22 @@ export default async function Home() {
             Your ideas, set in motion
           </div>
 
-          <h1 className="max-w-[700px] text-[clamp(3.4rem,7.1vw,6.7rem)] font-semibold leading-[0.98] tracking-[-0.075em]">
+          <h1 className="max-w-[700px] text-[clamp(3.4rem,6.2vw,5.8rem)] font-semibold leading-[0.98] tracking-[-0.075em]">
             Welcome to
             <span className="mt-2 block bg-gradient-to-r from-white via-violet-100 to-cyan-200 bg-clip-text pb-2 text-transparent">
               Alpha Agents
             </span>
           </h1>
 
-          <p className="mt-7 max-w-[550px] text-base leading-7 text-slate-300/75 sm:text-lg sm:leading-8">
+          <p className="mt-7 max-w-[550px] text-base leading-7 text-slate-300/75 sm:text-lg sm:leading-8 lg:mt-5 lg:text-base lg:leading-7">
             Turn your ideas into intelligent agents. Connect the steps, shape how
             they work, and bring your own AI workflows to life.
           </p>
 
-          <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center">
+          <div className="mt-9 flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:mt-6">
             <Link
               href="/sign-up"
-              className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-white px-7 text-base font-semibold text-[#101321] shadow-[0_12px_45px_rgba(167,139,250,0.22)] transition duration-200 hover:-translate-y-0.5 hover:bg-violet-100 hover:shadow-[0_18px_55px_rgba(167,139,250,0.34)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080b13]"
+              className="group inline-flex min-h-14 items-center justify-center gap-3 rounded-full bg-white px-7 text-base font-semibold text-[#101321] shadow-[0_12px_45px_rgba(167,139,250,0.22)] transition duration-200 hover:-translate-y-0.5 hover:bg-violet-100 hover:shadow-[0_18px_55px_rgba(167,139,250,0.34)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-300 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080b13] lg:min-h-12"
             >
               Enter
               <span className="grid size-8 place-items-center rounded-full bg-[#111528] text-white transition-transform duration-200 group-hover:translate-x-1">
@@ -96,7 +96,7 @@ export default async function Home() {
             <span className="text-sm text-white/45">Start building in your own workspace</span>
           </div>
 
-          <div className="mt-14 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/55">
+          <div className="mt-14 flex flex-wrap gap-x-7 gap-y-3 border-t border-white/10 pt-6 text-sm text-white/55 lg:mt-8 lg:pt-4">
             <span className="inline-flex items-center gap-2">
               <Workflow aria-hidden="true" className="size-4 text-violet-200" />
               Visual workflows
@@ -132,7 +132,7 @@ export default async function Home() {
               </span>
             </div>
 
-            <div className="relative mt-3 min-h-[360px] overflow-hidden rounded-[22px] border border-white/[0.07] bg-[#0a0f1b] sm:min-h-[440px] sm:rounded-[26px]" style={canvasDots}>
+            <div className="relative mt-3 min-h-[340px] overflow-hidden rounded-[22px] border border-white/[0.07] bg-[#0a0f1b] sm:min-h-[390px] sm:rounded-[26px]" style={canvasDots}>
               <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_45%,rgba(95,76,180,0.13),transparent_62%)]" />
               <div className="absolute left-5 top-5 flex items-center gap-2 text-[11px] font-medium text-white/40 sm:left-7 sm:top-7 sm:text-xs">
                 <GitBranch aria-hidden="true" className="size-3.5" />
