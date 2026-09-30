@@ -14,6 +14,10 @@ Build AI agents visually, connect them to tools, test them in a live preview, an
 
 **From a blank canvas to a working AI workflow—one connected step at a time.**
 
+### 🎥 Project Preview
+
+[▶️ **Watch Alpha Agents — Project Preview**](https://github.com/paarthkaringula2004/Project-Images-Video/blob/main/Images-Videos/AI%20Agent%20Builder%20Preview%20Video/AlphaAgent%20Project%20Preview.mp4)
+
 </div>
 
 ---
